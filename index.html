@@ -8,35 +8,67 @@
         <nav>
           <section class="logo">
             <figure>
-              <img width="120" src="assets/images/youtube-logo.png" alt="Youtube Logo">
+              <img width="120" src="assets/images/youtube-logo.png" alt="Youtube Logo" id="youtube-logo">
             </figure>
           </section>
 
           <section class="search-bar">
-            <input type="text" placeholder="Search">
+            <input type="text" placeholder="Search" id="search-bar">
             <button>
               <figure>
-                <img width="18" src="assets/images/button-search-icon.png" alt="Search button">
+                <img width="18" src="assets/images/button-search-icon.png" alt="Search button" id="search-button">
               </figure>
             </button>
           </section>
           <section class="icons">
             <figure>
-              <img width="18" src="assets/images/add-video-icon.png" alt="Add Video">
+              <img width="18" src="assets/images/add-video-icon.png" alt="Add Video" id="add-video">
             </figure>
             <figure>
-              <img width="18" src="assets/images/apps-menu.png" alt="Apps Menu">
+              <img width="18" src="assets/images/apps-menu.png" alt="Apps Menu" id="app-menu">
             </figure>
             <figure>
-              <img width="18" src="assets/images/notification-icon.png" alt="Notifications">
+              <img width="18" src="assets/images/notification-icon.png" alt="Notifications" id="notifications">
             </figure>
             <figure>
-              <img width="18" src="assets/images/profile-avatar.png" alt="Profile Avatar">
+              <img width="18" src="assets/images/profile-avatar.png" alt="Profile Avatar" id="profile-avatar">
             </figure>
           </section>
         </nav>
       </header>
-      <main></main>
+      <main>
+          <section class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wyj17UwXkbU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Microverse Coding Challenges</h2>
+            <p>2,841 views &bull;</p>
+          </section>
+          
+          <section class="like-dislike-share">
+              <figure>
+                  <img width="18" src="assets/images/like-icon.png" alt="Like icon" id="like-icon"> 8
+              </figure>
+              <figure>
+                <img width="18" src="assets/images/dislike-icon.png" alt="Dislike icon" id="dislike-icon"> 2
+            </figure>
+            <figure>
+                <img width="18" src="assets/images/share-button-icon.png" alt="Share button icon" id="share-button-icon"> Share
+            </figure>
+          </section>
+        
+          <section class="video-uploaded-by">
+            <figure>
+                <img width="60" src="assets/images/user-avatar-icon.png" alt="User avatar" id="user-avatar"> 
+            </figure>
+            <h3>Random User</h3>
+            <p id="subscriber-count">9 subscribers</p>
+            <p id="videos-description">
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </p>
+            <button id="subscribe-button">Subscribe</button>
+          </section>
+      </main>
       <footer></footer>
     </body>
 </html>
