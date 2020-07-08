@@ -138,7 +138,6 @@ main {
     margin-right: 5%;
 }
 main .video-container {
-    background-color: aqua;
     flex-basis: 70%; 
 }
 main .recommended-videos {
@@ -160,4 +159,67 @@ h2 {
     font-weight: 300;
     color: rgba(0,0,0,0.8);
     margin-top: -5px;
+}
+
+.like-dislike-share {
+    display: flex;
+    float: right;
+    margin-right: 2%;
+    margin-top: -40px;
+    position: relative;
+}
+
+.like-dislike-share .icon-wrapper {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.like-dislike-share .icon-wrapper .icon {
+    padding-right: 10px;
+    width: 24px;
+}
+hr {
+    margin-right: 2%;
+}
+.line {
+    position: absolute;
+    width: 140px;
+    height: 4px;
+    background-color: gray;
+    bottom: -7px;
+}
+.video-uploaded-by {
+    display: flex;
+    margin-top: 20px;
+}
+
+.user-avatar img {
+    width: 60px;
+}
+.user-info {
+    flex-basis: 70%;
+    margin: 0 20px;
+    margin-top: -10px;
+}
+#subscriber-count {
+    margin-top: -20px;
+    font-size: 14px;
+    color: gray;
+}
+#subscribe-button {
+    height: 34px;
+    background-color: #FF0000;
+    border: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #FFFFFF;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+#videos-description {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
 }
