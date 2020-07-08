@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 /*
   Normalize CSS
 */
 html {
     line-height: 1.2;
     text-size-adjust: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -124,4 +127,37 @@ figure {
 
 .icon {
   width: 30px;
+}
+
+/*
+  Main section
+*/
+main {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+main .video-container {
+    background-color: aqua;
+    flex-basis: 70%; 
+}
+main .recommended-videos {
+    background-color: beige;
+}
+iframe {
+    width: 98%;
+    height: 500px;
+    margin-top: 3%;
+}
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.8);
+}
+.video p {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(0,0,0,0.8);
+    margin-top: -5px;
 }
