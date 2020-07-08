@@ -1,3 +1,6 @@
+/*
+  Normalize CSS
+*/
 html {
     line-height: 1.2;
     text-size-adjust: 100%;
@@ -50,4 +53,75 @@ button::-moz-focus-inner {
  */
 button:-moz-focusring {
     outline: 1px dotted ButtonText;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Navigation
+*/
+.header {
+  margin: 0 20px;
+}
+
+.nav-flex-container,
+.nav-icons {
+  display: flex;
+}
+
+.nav-flex-container {
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+}
+
+#youtube-logo {
+  width: 120px;
+}
+
+.search-bar {
+  width: 60%;
+}
+
+.search-bar > button {
+  position: relative;
+  left: -5px;
+  top: 3px;
+  border: solid thin rgba(0,0,0,0.2);
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 38px;
+}
+
+#search-bar {
+  width: 700px;
+  height: 34px;
+  position: relative;
+  margin-left: 55px;
+  border: solid thin rgba(0,0,0,0.2);
+  padding-left: 20px;
+}
+
+#search-button {
+  width: 20px;
+}
+
+.nav-icons {
+  width: 20%;
+  justify-content: flex-end;
+}
+
+.nav-icons .icon {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.icon {
+  width: 30px;
 }
