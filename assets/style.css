@@ -90,6 +90,7 @@ figure {
 .nav-icons {
   justify-content: flex-end;
   flex: 1;
+  list-style-type: none;
 }
 
 #youtube-logo {
