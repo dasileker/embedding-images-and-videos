@@ -63,6 +63,11 @@ figure {
   padding: 0;
 }
 
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 /*
   Navigation
 */
@@ -73,6 +78,10 @@ figure {
 .nav-flex-container,
 .nav-icons {
   display: flex;
+}
+
+.nav-icons {
+  align-items: center;
 }
 
 .nav-flex-container {
@@ -130,17 +139,45 @@ figure {
 /*
   Main section
 */
+.color-gray {
+  color: gray;
+}
+
+.text-right {
+  float: right;
+}
+
 main {
     display: flex;
     margin-left: 5%;
     margin-right: 5%;
 }
 main .video-container {
-    flex-basis: 70%;
+  flex: 4;
 }
 main .recommended-videos {
-    background-color: beige;
+  flex: 2;
 }
+main .recommended-videos ul{
+    list-style-type: none;
+}
+.recommended-video {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 5px;
+}
+.recommended-video figure {
+  flex: 2;
+}
+.recommended-video figure img {
+  width: 100%;
+}
+
+.recommended-video section {
+  flex: 3;
+  padding-left: 10px;
+}
+
 iframe {
     width: 98%;
     height: 500px;
@@ -164,7 +201,6 @@ h2 {
     float: right;
     margin-right: 2%;
     margin-top: -40px;
-    position: relative;
 }
 
 .like-dislike-share .icon-wrapper {
@@ -181,8 +217,21 @@ h2 {
 hr {
     margin-right: 2%;
 }
+.fa-toggle-on {
+  font-size: 24px;
+  position: relative;
+  top: 4px;
+}
+.fa-video-camera,
+.fa-th,
+.fa-bell {
+  font-size: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: gray;
+}
+
 .line {
-    position: absolute;
     width: 140px;
     height: 4px;
     background-color: gray;
@@ -195,6 +244,12 @@ hr {
 
 .user-avatar img {
     width: 60px;
+}
+.user-avatar-navigation {
+  padding-left: 10px;
+}
+.user-avatar-navigation img {
+  width: 35px;
 }
 .user-info {
     flex-basis: 70%;
