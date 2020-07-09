@@ -81,29 +81,31 @@ figure {
 }
 
 .logo {
-  width: 20%;
+  flex: 1;
+}
+.search-bar {
+  flex: 4;
+}
+
+.nav-icons {
+  justify-content: flex-end;
+  flex: 1;
 }
 
 #youtube-logo {
   width: 120px;
 }
 
-.search-bar {
-  width: 60%;
-}
-
 .search-bar > button {
   position: relative;
+  width: 10%;
   left: -5px;
-  top: 3px;
   border: solid thin rgba(0,0,0,0.2);
-  padding-right: 20px;
-  padding-left: 20px;
   height: 38px;
 }
 
 #search-bar {
-  width: 700px;
+  width: 70%;
   height: 34px;
   position: relative;
   margin-left: 55px;
@@ -112,12 +114,7 @@ figure {
 }
 
 #search-button {
-  width: 20px;
-}
-
-.nav-icons {
-  width: 20%;
-  justify-content: flex-end;
+  width: 15px;
 }
 
 .nav-icons .icon {
@@ -138,7 +135,7 @@ main {
     margin-right: 5%;
 }
 main .video-container {
-    flex-basis: 70%; 
+    flex-basis: 70%;
 }
 main .recommended-videos {
     background-color: beige;
