@@ -154,6 +154,7 @@ main {
 }
 main .video-container {
   flex: 4;
+  position: relative;
 }
 main .recommended-videos {
   flex: 2;
@@ -165,6 +166,9 @@ main .recommended-videos ul{
   display: flex;
   align-items: flex-start;
   margin-top: 5px;
+}
+.recommended-videos ul:first-child {
+  border-bottom: 1px solid grey;
 }
 .recommended-video figure {
   flex: 2;
@@ -182,6 +186,7 @@ iframe {
     width: 98%;
     height: 500px;
     margin-top: 3%;
+    border: 0;
 }
 h2 {
     font-size: 18px;
@@ -202,7 +207,7 @@ h2 {
     margin-right: 2%;
     margin-top: -40px;
     list-style-type: none;
-    position: relative;
+    
 }
 
 .like-dislike-share .icon-wrapper {
@@ -238,7 +243,8 @@ hr {
     width: 80px;
     height: 4px;
     background-color: gray;
-    bottom: -12px;
+    top: 47.5%;
+    right: 115px;
     position: absolute;
 }
 .video-uploaded-by {
