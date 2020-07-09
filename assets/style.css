@@ -167,8 +167,12 @@ main .recommended-videos ul{
   align-items: flex-start;
   margin-top: 5px;
 }
-.recommended-videos ul:first-child {
-  border-bottom: 1px solid grey;
+.recommended-video.first {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding-bottom: 10px;
+}
+.recommended-video.first + .recommended-video {
+  padding-top: 10px;
 }
 .recommended-video figure {
   flex: 2;
@@ -207,7 +211,7 @@ h2 {
     margin-right: 2%;
     margin-top: -40px;
     list-style-type: none;
-    
+
 }
 
 .like-dislike-share .icon-wrapper {
