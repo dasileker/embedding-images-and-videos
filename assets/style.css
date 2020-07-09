@@ -201,6 +201,8 @@ h2 {
     float: right;
     margin-right: 2%;
     margin-top: -40px;
+    list-style-type: none;
+    position: relative;
 }
 
 .like-dislike-share .icon-wrapper {
@@ -216,6 +218,7 @@ h2 {
 }
 hr {
     margin-right: 2%;
+    border: 0.5px solid rgba(0,0,0,0.2);
 }
 .fa-toggle-on {
   font-size: 24px;
@@ -232,10 +235,11 @@ hr {
 }
 
 .line {
-    width: 140px;
+    width: 80px;
     height: 4px;
     background-color: gray;
-    bottom: -7px;
+    bottom: -12px;
+    position: absolute;
 }
 .video-uploaded-by {
     display: flex;
@@ -275,4 +279,45 @@ hr {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.5;
+}
+.comments p span {
+  padding-left: 30px;
+}
+
+.user-avatar-comment img{
+  width: 50px;
+}
+.comment-box {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.user-avatar-comment {
+  flex: 1;
+}
+.comment-box input {
+  border: none;
+  border-bottom: 1px solid gray;
+  flex: 12;
+  padding-bottom: 1px;
+}
+.user-commented {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.user-commented .user-avatar-comment {
+  flex: 1;
+}
+.user-commented section {
+  flex: 12;
+  margin-top: -15px;
+}
+
+.avatar-comments {
+  font-size: 14px;
+  margin-top: -10px;
+}
+.fa:hover {
+  cursor: pointer;
 }
