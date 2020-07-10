@@ -72,7 +72,13 @@ ul {
   Navigation
 */
 .header {
-  margin: 0 20px;
+  margin: 0 19px;
+  position: fixed;
+  top: 0;
+  left: -1.5vw;
+  width: 100%;
+  background-color: #FFF;
+  z-index: 2;
 }
 
 .nav-flex-container,
@@ -85,8 +91,9 @@ ul {
 }
 
 .nav-flex-container {
-  margin-bottom: 30px;
   align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .logo {
@@ -149,8 +156,10 @@ ul {
 
 main {
     display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 8%;
+    background-color: #F5F5F5;
 }
 main .video-container {
   flex: 4;
@@ -247,7 +256,7 @@ hr {
     width: 80px;
     height: 4px;
     background-color: gray;
-    top: 47.5%;
+    top: 601px;
     right: 115px;
     position: absolute;
 }
@@ -281,6 +290,7 @@ hr {
     border: 0;
     padding-left: 15px;
     padding-right: 15px;
+    margin-right: 3%;
     color: #FFFFFF;
     border-radius: 3px;
     text-transform: uppercase;
