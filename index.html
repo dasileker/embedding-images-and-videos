@@ -11,14 +11,14 @@
 <body>
   <header class="header">
     <nav class="nav-flex-container">
-        <figure class="logo">
-          <img src="assets/images/youtube-logo.png" alt="Youtube Logo" id="youtube-logo">
-        </figure>
+      <figure class="logo">
+        <img src="assets/images/youtube-logo.png" alt="Youtube Logo" id="youtube-logo">
+      </figure>
 
       <section class="search-bar">
         <input type="text" placeholder="Search" id="search-bar">
         <button>
-            <img class="icon" src="assets/images/button-search-icon.png" alt="Search button" id="search-button">
+          <img class="icon" src="assets/images/button-search-icon.png" alt="Search button" id="search-button">
         </button>
       </section>
       <ul class="nav-icons">
@@ -45,30 +45,47 @@
         <iframe src="https://www.youtube.com/embed/wyj17UwXkbU"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h2>Microverse Coding Challenges</h2>
-        <p>2,841 views &bull; 7 Feb 2018</p>
-        <hr>
+        <section class="user-subscribe-views">
+          <section class="user-avatar">
+            <figure>
+              <img src="assets/images/user-avatar-icon.png" alt="User avatar">
+            </figure>
+          </section>
+          <section class="user-subscribe-count">
+            <h4 class="color-gray">Random User</h4>
+            <button id="subscribe-button">Subscribe</button>
+            <button id="count" class="color-gray">9</button>
+          </section>
+          <section class="views-count color-gray">
+            <h3>5,678 views</h3>
+            <div class="line"></div>
+          </section>
+        </section>
       </section>
 
-      <ul class="like-dislike-share color-gray">
-        <li>
-          <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&ensp;8&emsp;
-        </li>
-        <li>
-          <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>&ensp;4&emsp;
-        </li>
-        <li>
-          <i class="fa fa-share" aria-hidden="true"></i>&ensp;Share&emsp;
-        </li>
-      </ul>
-      <div class="line"></div>
+      <section class="views-share-like-dislike">
+        <section class="add-share">
+          <button class="color-gray">
+            <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;<small>Add to</small></button>
+          <button class="color-gray">
+            <i class="fa fa-share" aria-hidden="true"></i>&nbsp;<small>Share</small></button>
+          <button class="color-gray">
+            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>&nbsp;<small>More</small></button>
+        </section>
+        <section class="like-dislike">
+          <button class="color-gray">
+            <i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<small>123</small>
+          </button>
+          <button class="color-gray">
+            <i class="fa fa-thumbs-down" aria-hidden="true"></i>&nbsp;<small>23</small>
+          </button>
+        </section>
+      </section>
+
 
       <section class="video-uploaded-by">
-        <figure class="user-avatar">
-          <img src="assets/images/user-avatar-icon.png" alt="User avatar">
-        </figure>
         <article class="user-info">
-          <h3>Random User</h3>
-          <p id="subscriber-count">9 subscribers</p>
+          <h5>Published on Feb 27, 2014</h5>
           <p id="videos-description">
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -78,7 +95,7 @@
 
         </article>
 
-        <button id="subscribe-button">Subscribe</button>
+
       </section>
       <hr>
       <section class="comments">
@@ -103,16 +120,18 @@
                   <small><strong>User2</strong></small>&ensp;
                   <small class="color-gray">2 months ago</small>
                 </p>
-                <p class="avatar-comments">Thank you for the video.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                <p class="avatar-comments">Thank you for the video.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco
                   laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <span class="color-gray">
-                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&ensp;12
-                  </span>&emsp;
-                  <span class="color-gray">
-                    <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>&ensp;2
-                  </span>&emsp;
-                    <small class="color-gray">REPLY</small>
+                <span class="color-gray">
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&ensp;12
+                </span>&emsp;
+                <span class="color-gray">
+                  <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>&ensp;2
+                </span>&emsp;
+                <small class="color-gray">REPLY</small>
               </section>
             </li>
             <li class="user-commented">
@@ -122,18 +141,20 @@
               <section>
                 <p>
                   <small><strong>User3</strong></small>&ensp;
-                <small class="color-gray">4 months ago</small>
+                  <small class="color-gray">4 months ago</small>
                 </p>
-              <p class="avatar-comments">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="avatar-comments">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <span class="color-gray">
                   <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&ensp;3
                 </span>&emsp;
                 <span class="color-gray">
                   <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>&ensp;2
                 </span>&emsp;
-                  <small class="color-gray">REPLY</small>
+                <small class="color-gray">REPLY</small>
               </section>
             </li>
             <li class="user-commented">
@@ -152,7 +173,7 @@
                 <span class="color-gray">
                   <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>&ensp;3
                 </span>&emsp;
-                  <small class="color-gray">REPLY</small>
+                <small class="color-gray">REPLY</small>
               </section>
             </li>
           </ul>
@@ -167,7 +188,7 @@
           Autoplay&ensp;<i class="fa fa-toggle-on" aria-hidden="true"></i>
         </span>
       </p>
-      <ul >
+      <ul>
         <li class="recommended-video first">
           <figure>
             <img src="assets/images/recommendedVideo1.png" alt="Recommended Video 1">
