@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Youtube Clone</title>
+  <script src="https://use.fontawesome.com/f220714871.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav-flex-container">
+      <figure class="logo">
+        <img src="assets/images/youtube-logo.png" alt="Youtube Logo" id="youtube-logo">
+      </figure>
+
+      <section class="search-bar">
+        <input type="text" placeholder="Search" id="search-bar">
+        <button>
+          <img class="icon" src="assets/images/button-search-icon.png" alt="Search button" id="search-button">
+        </button>
+      </section>
+      <ul class="nav-icons">
+        <li>
+          <i class="fa fa-video-camera" aria-hidden="true"></i>
+        </li>
+        <li>
+          <i class="fa fa-th" aria-hidden="true"></i>
+        </li>
+        <li>
+          <i class="fa fa-bell" aria-hidden="true"></i>
+        </li>
+        <li>
+          <figure class="user-avatar-navigation">
+            <img src="assets/images/user-avatar-icon.png" alt="User avatar" id="user-avatar">
+          </figure>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="video-container">
+      <section class="video">
+        <iframe src="https://www.youtube.com/embed/wyj17UwXkbU"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2>Microverse Coding Challenges</h2>
+        <section class="user-subscribe-views">
+          <section class="user-avatar">
+            <figure>
+              <img src="assets/images/user-avatar-icon.png" alt="User avatar">
+            </figure>
+          </section>
+          <section class="user-subscribe-count">
+            <h4 class="color-gray">Random User</h4>
+            <button id="subscribe-button">Subscribe</button>
+            <button id="count" class="color-gray">9</button>
+          </section>
+          <section class="views-count color-gray">
+            <h3>5,678 views</h3>
+            <div class="line"></div>
+          </section>
+        </section>
+      </section>
+
+      <section class="views-share-like-dislike">
+        <section class="add-share">
+          <button class="color-gray">
+            <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;<small>Add to</small></button>
+          <button class="color-gray">
+            <i class="fa fa-share" aria-hidden="true"></i>&nbsp;<small>Share</small></button>
+          <button class="color-gray">
+            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>&nbsp;<small>More</small></button>
+        </section>
+        <section class="like-dislike">
+          <button class="color-gray">
+            <i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<small>123</small>
+          </button>
+          <button class="color-gray">
+            <i class="fa fa-thumbs-down" aria-hidden="true"></i>&nbsp;<small>23</small>
+          </button>
+        </section>
+      </section>
+
+
+      <section class="video-uploaded-by">
+        <article class="user-info">
+          <h5>Published on Feb 27, 2014</h5>
+          <p id="videos-description">
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+            essentially unchanged.
+          </p>
+
+        </article>
+
+
+      </section>
+      <hr>
+      <section class="comments">
+        <p>10 Comments
+          <span class="color-gray"><i class="fa fa-sort-amount-desc"></i> SORT BY</span>
+        </p>
+        <section class="comment-box">
+          <figure class="user-avatar-comment">
+            <img src="assets/images/user-icon1.png" alt="current-user">
+          </figure>
+          <input type="text" placeholder="Add a public comment...">
+        </section>
+
+        <section>
+          <ul>
+            <li class="user-commented">
+              <figure class="user-avatar-comment">
+                <img src="assets/images/user-icon2.png" alt="user-2">
+              </figure>
+              <section>
+                <p>
+                  <small><strong>User2</strong></small>&ensp;
+                  <small class="color-gray">2 months ago</small>
+                </p>
+                <p class="avatar-comments">Thank you for the video.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <span class="color-gray">
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&ensp;12
+                </span>&emsp;
+                <span class="color-gray">
+                  <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>&ensp;2
+                </span>&emsp;
+                <small class="color-gray">REPLY</small>
+              </section>
+            </li>
+            <li class="user-commented">
+              <figure class="user-avatar-comment">
+                <img src="assets/images/user-icon3.png" alt="user-3">
+              </figure>
+              <section>
+                <p>
+                  <small><strong>User3</strong></small>&ensp;
+                  <small class="color-gray">4 months ago</small>
+                </p>
+                <p class="avatar-comments">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <span class="color-gray">
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&ensp;3
+                </span>&emsp;
+                <span class="color-gray">
+                  <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>&ensp;2
+                </span>&emsp;
+                <small class="color-gray">REPLY</small>
+              </section>
+            </li>
+            <li class="user-commented">
+              <figure class="user-avatar-comment">
+                <img src="assets/images/user-icon4.png" alt="user-4">
+              </figure>
+              <section>
+                <p>
+                  <small><strong>User4</strong></small>&ensp;
+                  <small class="color-gray">2 years ago</small>
+                </p>
+                <p class="avatar-comments">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                <span class="color-gray">
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&ensp;15
+                </span>&emsp;
+                <span class="color-gray">
+                  <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>&ensp;3
+                </span>&emsp;
+                <small class="color-gray">REPLY</small>
+              </section>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </section>
+
+    <aside class="recommended-videos">
+      <p>
+        Up Next
+        <span class="text-right">
+          Autoplay&ensp;<i class="fa fa-toggle-on" aria-hidden="true"></i>
+        </span>
+      </p>
+      <ul>
+        <li class="recommended-video first">
+          <figure>
+            <img src="assets/images/recommendedVideo1.png" alt="Recommended Video 1">
+          </figure>
+          <section>
+            <small>
+              <strong>How to Get a Job at the Big 4 - Microsoft, Apple, Google & Facebook</strong>
+            </small><br>
+            <small class="color-gray">SJ Tech</small><br>
+            <small class="color-gray">1.2m views &bull; 5 years ago</small>
+          </section>
+        </li>
+        <li class="recommended-video">
+          <figure>
+            <img src="assets/images/recommendedVideo2.png" alt="Recommended Video 2">
+          </figure>
+          <section>
+            <small>
+              <strong>How to Get a Job at the Big 4 - Microsoft, Apple, Google & Facebook</strong>
+            </small><br>
+            <small class="color-gray">SJ Tech</small><br>
+            <small class="color-gray">1.2m views &bull; 5 years ago</small>
+          </section>
+        </li>
+        <li class="recommended-video">
+          <figure>
+            <img src="assets/images/recommendedVideo1.png" alt="Recommended Video 1">
+          </figure>
+          <section>
+            <small>
+              <strong>How to Get a Job at the Big 4 - Microsoft, Apple, Google & Facebook</strong>
+            </small><br>
+            <small class="color-gray">SJ Tech</small><br>
+            <small class="color-gray">1.2m views &bull; 5 years ago</small>
+          </section>
+        </li>
+        <li class="recommended-video">
+          <figure>
+            <img src="assets/images/recommendedVideo2.png" alt="Recommended Video 2">
+          </figure>
+          <section>
+            <small>
+              <strong>How to Get a Job at the Big 4 - Microsoft, Apple, Google & Facebook</strong>
+            </small><br>
+            <small class="color-gray">SJ Tech</small><br>
+            <small class="color-gray">1.2m views &bull; 5 years ago</small>
+          </section>
+        </li>
+        <li class="recommended-video">
+          <figure>
+            <img src="assets/images/recommendedVideo2.png" alt="Recommended Video 2">
+          </figure>
+          <section>
+            <small>
+              <strong>How to Get a Job at the Big 4 - Microsoft, Apple, Google & Facebook</strong>
+            </small><br>
+            <small class="color-gray">SJ Tech</small><br>
+            <small class="color-gray">1.2m views &bull; 5 years ago</small>
+          </section>
+        </li>
+        <li class="recommended-video">
+          <figure>
+            <img src="assets/images/recommendedVideo2.png" alt="Recommended Video 2">
+          </figure>
+          <section>
+            <small>
+              <strong>How to Get a Job at the Big 4 - Microsoft, Apple, Google & Facebook</strong>
+            </small><br>
+            <small class="color-gray">SJ Tech</small><br>
+            <small class="color-gray">1.2m views &bull; 5 years ago</small>
+          </section>
+        </li>
+      </ul>
+    </aside>
+  </main>
+  <footer></footer>
+</body>
+
+</html>

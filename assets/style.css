@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/*
+  Normalize CSS
+*/
+html {
+    line-height: 1.2;
+    text-size-adjust: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+    border-style: none;
+}
+/**
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+    font-size: 100%;
+    line-height: 1.2;
+    margin: 0;
+    overflow: visible;
+}
+/**
+    1. Remove the inheritance of text transform in Firefox.
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button {
+    text-transform: none;
+    -webkit-appearance: button;
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/*
+  Navigation
+*/
+.header {
+  margin: 0 19px;
+  position: fixed;
+  top: 0;
+  left: -1.5vw;
+  width: 100%;
+  background-color: #FFF;
+  z-index: 2;
+}
+
+.nav-flex-container,
+.nav-icons {
+  display: flex;
+}
+
+.nav-icons {
+  align-items: center;
+}
+
+.nav-flex-container {
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.logo {
+  flex: 1;
+}
+.search-bar {
+  flex: 4;
+}
+
+.nav-icons {
+  justify-content: flex-end;
+  flex: 1;
+  list-style-type: none;
+}
+
+#youtube-logo {
+  width: 120px;
+}
+
+.search-bar > button {
+  position: relative;
+  width: 10%;
+  left: -5px;
+  border: solid thin rgba(0,0,0,0.2);
+  height: 38px;
+}
+
+#search-bar {
+  width: 70%;
+  height: 34px;
+  position: relative;
+  margin-left: 55px;
+  border: solid thin rgba(0,0,0,0.2);
+  padding-left: 20px;
+}
+
+#search-button {
+  width: 15px;
+}
+
+.nav-icons .icon {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.icon {
+  width: 30px;
+}
+
+/*
+  Main section
+*/
+.color-gray {
+  color: gray;
+}
+
+.text-right {
+  float: right;
+}
+
+main {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 8%;
+    background-color: #F5F5F5;
+}
+main .video-container {
+  flex: 4;
+  position: relative;
+}
+main .recommended-videos {
+  flex: 2;
+}
+main .recommended-videos ul{
+    list-style-type: none;
+}
+.recommended-video {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 5px;
+}
+.recommended-video.first {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding-bottom: 10px;
+}
+.recommended-video.first + .recommended-video {
+  padding-top: 10px;
+}
+.recommended-video figure {
+  flex: 2;
+}
+.recommended-video figure img {
+  width: 100%;
+}
+
+.recommended-video section {
+  flex: 3;
+  padding-left: 10px;
+}
+
+iframe {
+    width: 98%;
+    height: 500px;
+    margin-top: 3%;
+    border: 0;
+}
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.8);
+}
+.video p {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(0,0,0,0.8);
+    margin-top: -5px;
+}
+.user-subscribe-views {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 2%;
+  
+}
+
+.views-share-like-dislike {
+  border-top: 1px solid rgba(0,0,0,0.2);
+  display: flex;
+  margin-right: 2%;
+  padding-top: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding-bottom: 10px;
+  margin-top: -10px;
+}
+
+.views-share-like-dislike button {
+  border: none;
+  background: transparent;
+}
+.add-share {
+  flex: 2;
+}
+
+.like-dislike {
+  float: right;
+}
+.fa-thumbs-up,
+.fa-thumbs-down {
+  font-size: 22px;
+}
+.user-subscribe-count {
+  flex: 8;
+}
+#subscribe-button,
+#count {
+  position: relative;
+  top: -20px;
+  height: 28px;
+  border-radius: 0;
+  border: 1px solid rgba(0,0,0,0.2);
+  font-size: 14px;
+}
+#count {
+  left: -23px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.views-count {
+  flex: 3;
+  text-align: right;
+  position: relative;
+}
+.line {
+  position: absolute;
+  width: 100px;
+  border: 2px solid rgba(44, 7, 211, 0.5);
+  right: 0;
+  bottom: 7px;
+}
+.user-avatar {
+  flex: 1;
+  position: relative;
+  top: -10px;
+}
+.views-share-like-dislike {
+  display: flex;
+}
+h3 {
+  font-weight: 400;
+}
+
+hr {
+    margin-right: 2%;
+    border: 0.5px solid rgba(0,0,0,0.2);
+}
+.fa-toggle-on {
+  font-size: 24px;
+  position: relative;
+  top: 4px;
+}
+.fa-video-camera,
+.fa-th,
+.fa-bell {
+  font-size: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: gray;
+}
+
+.video-uploaded-by {
+    display: flex;
+    margin-top: 20px;
+}
+
+.user-avatar img {
+    width: 60px;
+}
+.user-avatar-navigation {
+  padding-left: 10px;
+}
+.user-avatar-navigation img {
+  width: 35px;
+}
+.user-info {
+    flex-basis: 70%;
+    margin: 0 20px;
+    margin-top: -10px;
+}
+#subscriber-count {
+    margin-top: -20px;
+    font-size: 14px;
+    color: gray;
+}
+#subscribe-button {
+    background-color: #FF0000;
+    border: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 3%;
+    color: #FFFFFF;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+#videos-description {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.comments p span {
+  padding-left: 30px;
+}
+
+.user-avatar-comment img{
+  width: 50px;
+}
+.comment-box {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.user-avatar-comment {
+  flex: 1;
+}
+.comment-box input {
+  border: none;
+  border-bottom: 1px solid gray;
+  flex: 12;
+  padding-bottom: 1px;
+}
+.user-commented {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.user-commented .user-avatar-comment {
+  flex: 1;
+}
+.user-commented section {
+  flex: 12;
+  margin-top: -15px;
+}
+
+.avatar-comments {
+  font-size: 14px;
+  margin-top: -10px;
+}
+.fa:hover {
+  cursor: pointer;
+}
