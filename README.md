@@ -3,13 +3,12 @@
 
 > This project consists of building an HTML document that matches the appearance of youtube video player page.
 
+## Project Screenshot
+![Project Screenshot][https://raw.githubusercontent.com/oracleot/embedding-images-and-videos/index-page-branch/127.0.0.1_3000_(Laptop%20with%20MDPI%20screen)%20(1).png]
+
 ## Built with
 - HTML
 - CSS
-
-## Live Demo
-
-[Link to Demo]()
 
 ## Authors
 
